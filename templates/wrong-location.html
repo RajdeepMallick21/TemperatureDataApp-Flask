@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0,
+          minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Invalid Coordinates</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Invalid Coordinates</h1>
+    <h2>Latitude value has to be between -90&deg; to 90&deg;</h2>
+    <h2>Longitude value has to be between -180&deg; to 180&deg;</h2>
+
+    <form action="/temperature">
+        <input type="text" name="LAT Value" id="LAT Value" placeholder="Enter LAT Coordinate" />
+        <input type="text" name="LON Value" id="LON Value" placeholder="Enter LON Coordinate" />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

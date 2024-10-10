@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0,
+          minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }} Temperature</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Coordinates entered: {{ LATITUDE }}&deg; {{ LONGITUDE }}&deg;</h1>
+    <p> Average Temperature at 2m is {{ temp_2m }} &deg F</p>
+    <p> Average Temperature at 80m is {{ temp_80m }} &deg F</p>
+    <p> Average Temperature at 120m is {{ temp_120m }} &deg F</p>
+    <p> Average Temperature at 180m is {{ temp_180m }} &deg F</p>
+
+    <form action="/temperature">
+        <input type="text" name="LAT Value" id="LAT Value" placeholder="Enter LAT Coordinate" />
+        <input type="text" name="LON Value" id="LON Value" placeholder="Enter LON Coordinate" />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

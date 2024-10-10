@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0,
+          minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Temperature Values</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Get Temperature Values</h1>
+
+    <form action="/temperature">
+        <input type="text" name="LAT Value" id="LAT Value" placeholder="Enter LAT Coordinate" />
+        <input type="text" name="LON Value" id="LON Value" placeholder="Enter LON Coordinate" />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

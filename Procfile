@@ -1,3 +1,3 @@
 web: gunicorn server:app
-web: gunicorn data_analyzer:app
-web: gunicorn data_collector:app
+worker: gunicorn data_analyzer:app
+worker: gunicorn data_collector:app

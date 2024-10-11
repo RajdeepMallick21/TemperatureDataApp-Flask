@@ -1,3 +1,3 @@
 web: gunicorn server:app
-clock: python3 data_analyzer.py
-clock: python3 data_collector.py
+web: gunicorn data_analyzer:app
+web: gunicorn data_collector:app

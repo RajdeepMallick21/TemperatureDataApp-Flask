@@ -1,3 +1,3 @@
 web: gunicorn server:app
-worker: python data_analyzer.py
-processor: python data_collector.py
+analyzer: python data_analyzer.py
+collector: python data_collector.py
